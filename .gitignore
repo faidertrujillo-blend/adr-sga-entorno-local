@@ -1,0 +1,13 @@
+# Entorno y datos locales
+.venv/
+floci-data/
+logs/
+__pycache__/
+*.pyc
+
+# Configuración personal (cada persona la suya)
+config.local
+
+# Respuestas grabadas: pueden tener datos de prueba; cada quien graba las suyas
+proxy/mocks/grabados/*
+!proxy/mocks/grabados/.gitkeep

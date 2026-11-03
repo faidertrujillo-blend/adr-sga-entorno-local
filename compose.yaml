@@ -1,0 +1,20 @@
+# AWS local (S3 + DynamoDB) del SGA con Floci.
+#
+# Puerto 4567 (no 4566): el 4566 lo usa otro proyecto (paca-local-floci-1).
+# Solo se publica en 127.0.0.1 para que nadie de la red lo alcance.
+# Sin docker.sock: S3 y DynamoDB corren dentro del contenedor y no lo necesitan.
+name: sga-local
+
+services:
+  floci:
+    image: floci/floci:2.3.0
+    container_name: sga-floci
+    ports:
+      - "127.0.0.1:4567:4566"
+    environment:
+      # hybrid: en memoria y se guarda en disco cada 5 s; sobrevive a reinicios.
+      FLOCI_STORAGE_MODE: hybrid
+      FLOCI_STORAGE_PERSISTENT_PATH: /data
+    volumes:
+      - ./floci-data:/data
+    restart: unless-stopped

@@ -1,0 +1,10 @@
+# Configuración personal del entorno local. Copia este archivo a `config.local`
+# (que NO se sube al repo) y pon tus datos:
+#
+#   cp config.local.example config.local
+#
+# SGA_MI_CORREO debe ser EXACTAMENTE el campo `email` de tu token de Keycloak
+# (el correo con el que inicias sesión en el SGA). Si no coincide, tu bandeja
+# "Asignadas" saldrá vacía.
+SGA_MI_CORREO="tu.usuario@adres.gov.co"
+SGA_MI_NOMBRE="Tu Nombre"

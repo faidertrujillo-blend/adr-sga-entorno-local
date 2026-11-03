@@ -1,0 +1,6 @@
+{
+  "metodo": "GET",
+  "ruta": "/api/v1/reclamaciones/{id}/cruces",
+  "estado": 200,
+  "cuerpo": { "idReclamacion": "{id}", "cruces": [] }
+}

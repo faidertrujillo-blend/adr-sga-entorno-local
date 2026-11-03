@@ -1,0 +1,288 @@
+{
+  "metodo": "GET",
+  "ruta": "/api/v1/reclamaciones/{id}/cruces",
+  "cuando": {
+    "id": "2026205002"
+  },
+  "estado": 200,
+  "demora_ms": 300,
+  "cuerpo": {
+    "idReclamacion": "{id}",
+    "cruces": [
+      {
+        "tipo": "RNEC",
+        "nombre": "Registraduría (RNEC)",
+        "estadoConsulta": "OK",
+        "hayHallazgo": true,
+        "mensajeError": null,
+        "hallazgos": [
+          {
+            "mensaje": "Cruce total: la víctima figura fallecida el 2 de junio de 2026 y con documento cancelado.",
+            "campos": [
+              {
+                "clave": "rolCruzado",
+                "etiqueta": "Rol cruzado",
+                "valor": "VICTIMA",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "documento",
+                "etiqueta": "Tipo y número de documento",
+                "valor": "CC 1020304050",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "nombres",
+                "etiqueta": "Nombres y apellidos",
+                "valor": "María Fernanda Quintero Salazar",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "fechaNacimiento",
+                "etiqueta": "Fecha de nacimiento",
+                "valor": "1988-03-14",
+                "tipoDato": "FECHA"
+              },
+              {
+                "clave": "genero",
+                "etiqueta": "Género",
+                "valor": "Femenino",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "fechaFallecimiento",
+                "etiqueta": "Fecha de fallecimiento",
+                "valor": "2026-06-02",
+                "tipoDato": "FECHA"
+              },
+              {
+                "clave": "fechaCancelacion",
+                "etiqueta": "Fecha de cancelación",
+                "valor": "2026-06-19",
+                "tipoDato": "FECHA"
+              }
+            ]
+          },
+          {
+            "mensaje": "Diferencia de apellido entre la reclamación y la Registraduría.",
+            "campos": [
+              {
+                "clave": "rolCruzado",
+                "etiqueta": "Rol cruzado",
+                "valor": "CONDUCTOR",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "documento",
+                "etiqueta": "Tipo y número de documento",
+                "valor": "CC 80123456",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "nombres",
+                "etiqueta": "Nombres y apellidos",
+                "valor": "Hernán Darío Pulido Vargas",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "fechaNacimiento",
+                "etiqueta": "Fecha de nacimiento",
+                "valor": "1979-11-27",
+                "tipoDato": "FECHA"
+              },
+              {
+                "clave": "genero",
+                "etiqueta": "Género",
+                "valor": "Masculino",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "fechaFallecimiento",
+                "etiqueta": "Fecha de fallecimiento",
+                "valor": null,
+                "tipoDato": "FECHA"
+              },
+              {
+                "clave": "fechaCancelacion",
+                "etiqueta": "Fecha de cancelación",
+                "valor": null,
+                "tipoDato": "FECHA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "POLIZAS",
+        "nombre": "Pólizas (por placa)",
+        "estadoConsulta": "OK",
+        "hayHallazgo": true,
+        "mensajeError": null,
+        "hallazgos": [
+          {
+            "mensaje": "La aseguradora reporta cobertura vigente a la fecha del evento.",
+            "campos": [
+              {
+                "clave": "victima",
+                "etiqueta": "Víctima",
+                "valor": "CC 1020304050 · María Fernanda Quintero Salazar",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "fechaEvento",
+                "etiqueta": "Fecha del evento",
+                "valor": "2026-06-02",
+                "tipoDato": "FECHA"
+              },
+              {
+                "clave": "fechaAtencion",
+                "etiqueta": "Fecha de atención",
+                "valor": "2026-06-02",
+                "tipoDato": "FECHA"
+              },
+              {
+                "clave": "valorServicioMedico",
+                "etiqueta": "Servicio médico",
+                "valor": 4850000,
+                "tipoDato": "MONEDA"
+              },
+              {
+                "clave": "valorIncapacidad",
+                "etiqueta": "Incapacidad",
+                "valor": 0,
+                "tipoDato": "MONEDA"
+              },
+              {
+                "clave": "valorIndemnizacion",
+                "etiqueta": "Indemnización",
+                "valor": 0,
+                "tipoDato": "MONEDA"
+              },
+              {
+                "clave": "valorFunerarios",
+                "etiqueta": "Funerarios",
+                "valor": 1920000,
+                "tipoDato": "MONEDA"
+              },
+              {
+                "clave": "valorTransporte",
+                "etiqueta": "Transporte",
+                "valor": 180000,
+                "tipoDato": "MONEDA"
+              },
+              {
+                "clave": "reclamante",
+                "etiqueta": "Reclamante",
+                "valor": "NIT 890303461 · Hospital Universitario del Valle E.S.E.",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "aseguradora",
+                "etiqueta": "Aseguradora y póliza",
+                "valor": "1005 · Seguros del Estado S.A. · Póliza 7845120",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "placa",
+                "etiqueta": "Placa",
+                "valor": "KLM482",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "aclaracion",
+                "etiqueta": "Aclaración",
+                "valor": "El evento ya fue cubierto por el SOAT; revisar duplicidad del cobro.",
+                "tipoDato": "TEXTO"
+              }
+            ]
+          },
+          {
+            "mensaje": "La placa tiene una segunda póliza vigente.",
+            "campos": [
+              {
+                "clave": "victima",
+                "etiqueta": "Víctima",
+                "valor": "CC 80123456 · Hernán Darío Pulido Vargas",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "fechaEvento",
+                "etiqueta": "Fecha del evento",
+                "valor": "2026-06-02",
+                "tipoDato": "FECHA"
+              },
+              {
+                "clave": "fechaAtencion",
+                "etiqueta": "Fecha de atención",
+                "valor": "2026-06-03",
+                "tipoDato": "FECHA"
+              },
+              {
+                "clave": "valorServicioMedico",
+                "etiqueta": "Servicio médico",
+                "valor": 1250000,
+                "tipoDato": "MONEDA"
+              },
+              {
+                "clave": "valorIncapacidad",
+                "etiqueta": "Incapacidad",
+                "valor": 320000,
+                "tipoDato": "MONEDA"
+              },
+              {
+                "clave": "valorIndemnizacion",
+                "etiqueta": "Indemnización",
+                "valor": 0,
+                "tipoDato": "MONEDA"
+              },
+              {
+                "clave": "valorFunerarios",
+                "etiqueta": "Funerarios",
+                "valor": 0,
+                "tipoDato": "MONEDA"
+              },
+              {
+                "clave": "valorTransporte",
+                "etiqueta": "Transporte",
+                "valor": 95000,
+                "tipoDato": "MONEDA"
+              },
+              {
+                "clave": "reclamante",
+                "etiqueta": "Reclamante",
+                "valor": "NIT 800123456 · Clínica Los Andes S.A.",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "aseguradora",
+                "etiqueta": "Aseguradora y póliza",
+                "valor": "1010 · Previsora Seguros S.A. · Póliza 3390045",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "placa",
+                "etiqueta": "Placa",
+                "valor": "ABC123",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "aclaracion",
+                "etiqueta": "Aclaración",
+                "valor": "Verificar con la aseguradora si la cobertura se superpone.",
+                "tipoDato": "TEXTO"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "SINIESTROS",
+        "nombre": "Siniestros",
+        "estadoConsulta": "ERROR",
+        "hayHallazgo": false,
+        "mensajeError": "Tiempo de espera agotado",
+        "hallazgos": []
+      }
+    ]
+  }
+}

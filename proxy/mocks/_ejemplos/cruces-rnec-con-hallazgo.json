@@ -1,0 +1,149 @@
+{
+  "metodo": "GET",
+  "ruta": "/api/v1/reclamaciones/{id}/cruces",
+  "cuando": {
+    "id": "2026205001"
+  },
+  "estado": 200,
+  "demora_ms": 800,
+  "cuerpo": {
+    "idReclamacion": "{id}",
+    "cruces": [
+      {
+        "tipo": "RNEC",
+        "nombre": "Registraduría (RNEC)",
+        "estadoConsulta": "OK",
+        "hayHallazgo": true,
+        "mensajeError": null,
+        "hallazgos": [
+          {
+            "mensaje": "Figura fallecida el 5 de mayo de 2026.",
+            "campos": [
+              {
+                "clave": "rolCruzado",
+                "etiqueta": "Rol cruzado",
+                "valor": "VICTIMA",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "tipoDocumento",
+                "etiqueta": "Tipo de documento",
+                "valor": "CC",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "numeroDocumento",
+                "etiqueta": "Número de documento",
+                "valor": "1020304050",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "primerNombre",
+                "etiqueta": "Primer nombre",
+                "valor": "Carlos",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "segundoNombre",
+                "etiqueta": "Segundo nombre",
+                "valor": "Andrés",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "primerApellido",
+                "etiqueta": "Primer apellido",
+                "valor": "Ramírez",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "segundoApellido",
+                "etiqueta": "Segundo apellido",
+                "valor": "Gómez",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "fechaNacimiento",
+                "etiqueta": "Fecha de nacimiento",
+                "valor": "1985-03-12",
+                "tipoDato": "FECHA"
+              },
+              {
+                "clave": "fechaFallecimiento",
+                "etiqueta": "Fecha de fallecimiento",
+                "valor": "2026-05-05",
+                "tipoDato": "FECHA"
+              }
+            ]
+          },
+          {
+            "mensaje": "Diferencia de apellido.",
+            "campos": [
+              {
+                "clave": "rolCruzado",
+                "etiqueta": "Rol cruzado",
+                "valor": "CONDUCTOR",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "tipoDocumento",
+                "etiqueta": "Tipo de documento",
+                "valor": "CC",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "numeroDocumento",
+                "etiqueta": "Número de documento",
+                "valor": "80123456",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "primerNombre",
+                "etiqueta": "Primer nombre",
+                "valor": "Hernán",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "segundoNombre",
+                "etiqueta": "Segundo nombre",
+                "valor": "Darío",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "primerApellido",
+                "etiqueta": "Primer apellido",
+                "valor": "Pulido",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "segundoApellido",
+                "etiqueta": "Segundo apellido",
+                "valor": "Vargas",
+                "tipoDato": "TEXTO"
+              },
+              {
+                "clave": "fechaNacimiento",
+                "etiqueta": "Fecha de nacimiento",
+                "valor": "1979-11-27",
+                "tipoDato": "FECHA"
+              },
+              {
+                "clave": "fechaFallecimiento",
+                "etiqueta": "Fecha de fallecimiento",
+                "valor": null,
+                "tipoDato": "FECHA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "SINIESTROS",
+        "nombre": "Siniestros por documento",
+        "estadoConsulta": "ERROR",
+        "hayHallazgo": false,
+        "mensajeError": "Tiempo de espera agotado",
+        "hallazgos": []
+      }
+    ]
+  }
+}

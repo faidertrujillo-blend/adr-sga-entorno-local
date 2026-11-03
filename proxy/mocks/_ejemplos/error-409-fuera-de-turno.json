@@ -1,0 +1,17 @@
+{
+  "metodo": "POST",
+  "ruta": "/api/v1/items/{id}/glosas/{glosaId}/levantar",
+  "estado": 409,
+  "cuerpo": {
+    "error": {
+      "code": "FUERA_DE_TURNO",
+      "httpStatus": 409,
+      "message": "No es el turno de su componente.",
+      "step": "proxy_local",
+      "operation": null,
+      "requestId": null,
+      "traceId": null
+    },
+    "detail": "No es el turno de su componente."
+  }
+}
